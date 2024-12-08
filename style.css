@@ -1,0 +1,381 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #faf1bc;
+    color: #333;
+}
+
+.btn-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.info-section {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background: url('https://images.unsplash.com/photo-1642552187855-388a77930fa8?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffae00;
+}
+
+
+header h1 {
+    font-size: 3rem;
+    z-index: 1;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    z-index: 1;
+}
+
+header .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #0078ff;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+header .btn:hover {
+    background: #0056c3;
+}
+
+nav {
+    background: #0078ff;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #0078ff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #fffbe1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+.gallery-item {
+    text-align: center;
+}
+
+.galeri img {
+    max-width: 100%;
+    width: 300px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+footer {
+    background: #0056c3;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #0078ff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.form-container {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.btn {
+    background: #0078ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button.btn:hover {
+    background: #0056c3;
+}
+
+@media (max-width: 768px) {
+    .layout-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fffbe1;
+}
+
+th, td {
+    border: 1px solid #050050;
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    background-color: #0078ff;
+    color: white;
+    font-weight: bold;
+}
+
+blockquote {
+    font-size: 1.4em;
+    font-style: italic;
+    color: #4d4d4d;
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 4px solid #1900ff;
+}
+
+.fasilitas-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fasilitas-list li {
+    flex: 1 1 calc(33.33% - 20px); 
+    box-sizing: border-box; 
+    text-align: center; 
+}
+
+.fasilitas-list h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.fasilitas-list img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#informasi-sekolah {
+    padding: 20px;
+    background-color: #fffbe1;
+}
+
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.info-left, .info-extra, .info-footer {
+    background-color: #faf1bc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+}
+
+.info-left ul, .info-extra ul, .info-footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-left li, .info-extra li, .info-footer li {
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+strong {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .info-left, .info-extra, .info-footer {
+        width: 100%;
+    }
+}
+
+.footer-action {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-action p {
+    font-size: 18px;
+    color: #555;
+}
+
+.footer-action .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.footer-action .btn:hover {
+    background-color: #0056b3;
+}
+
+footer .social-media {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-media a {
+    color: #ffffff;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #007BFF; 
+}
